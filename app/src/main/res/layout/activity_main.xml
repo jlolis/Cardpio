@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageViewBatata"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="32dp"
+        android:onClick="abrirBatata"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewPaoDeBanana"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/batatarecheada" />
+
+    <ImageView
+        android:id="@+id/imageViewPaoDeBanana"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="32dp"
+        android:onClick="abrirPaoDeBanana"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewBatata"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/paodebanana" />
+
+    <ImageView
+        android:id="@+id/imageViewPudim"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="24dp"
+        android:onClick="abrirPudim"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewQuibe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBatata"
+        app:srcCompat="@drawable/pudim" />
+
+    <ImageView
+        android:id="@+id/imageViewQuibe"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="24dp"
+        android:onClick="abrirQuibe"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPudim"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPaoDeBanana"
+        app:srcCompat="@drawable/quibecomabobora" />
+</android.support.constraint.ConstraintLayout>
